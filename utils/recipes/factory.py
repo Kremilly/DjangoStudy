@@ -18,6 +18,7 @@ def make_recipe():
     image_url = f'https://placehold.co/{width}x{height}?text=Food+Image'
     
     return {
+        'id': fake.random_int(min=1, max=9999),
         'title': fake.sentence(nb_words=6),
         'description': fake.sentence(nb_words=12),
         'preparation_time': fake.random_number(digits=2, fix_len=True),
