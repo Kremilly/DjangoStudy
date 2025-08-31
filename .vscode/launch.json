@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Python Debugger: Django",
-            "type": "debugpy",
+            "type": "python",
             "request": "launch",
             "args": [
                 "runserver"
