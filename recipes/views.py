@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from utils.recipes.factory import make_recipe
 from .models import Recipe
