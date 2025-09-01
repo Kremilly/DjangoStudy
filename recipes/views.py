@@ -12,6 +12,7 @@ def home(request):
         'recipes': recipes,
     })
 
+
 def category(request, category_id):
     recipes = get_list_or_404(
         Recipe.objects.filter(
@@ -24,6 +25,7 @@ def category(request, category_id):
         'recipes': recipes,
         'title': f'{recipes[0].category.name} - Category | '
     })
+
 
 def recipe(request, id):
     recipe = get_object_or_404(Recipe, pk=id, is_published=True,)

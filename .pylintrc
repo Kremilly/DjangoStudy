@@ -1,0 +1,5 @@
+[MASTER]
+load-plugins=pylint_django
+
+[pylint_django]
+settings-module=project.settings
