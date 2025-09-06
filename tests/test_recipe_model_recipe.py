@@ -16,7 +16,7 @@ class RecipeModelTest(RecipeTestBase):
             author=self.make_author(username='newuser'),
             title='Recipe Title',
             description='Recipe Description',
-            slug=f'recipe-slug-{uuid.uuid4().hex[:8]}',  # 👈 garante slug único
+            slug=f'recipe-slug-{uuid.uuid4().hex[:8]}',
             preparation_time=10,
             preparation_time_unit='Minutos',
             servings=5,
