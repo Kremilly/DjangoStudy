@@ -102,3 +102,7 @@ class RecipeViewsTest(RecipeTestBase):
         
         content = response.content.decode('utf-8')
         self.assertIn(needed_title, content)
+        
+    def test_recipe_search_uses_correct_view_function(self):
+        resolved = resolve(reverse('recipes:search'))
+        self.assertIs(resolved.func, views.search)
